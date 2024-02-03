@@ -3,7 +3,10 @@ package com.example.member
 class MemberService (
     private val memberRepository: MemberRepository
 ) {
-    fun signup(){}
+    fun signup(member: Member){
+        memberRepository.save(member)
+    }
 
-    fun findAll(){}
+    fun findAll() : List<Member>
+        = memberRepository.findAll()
 }

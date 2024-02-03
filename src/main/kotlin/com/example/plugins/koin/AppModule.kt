@@ -1,4 +1,4 @@
-package com.example.plugins
+package com.example.plugins.koin
 
 import com.example.member.InMemoryMemberRepository
 import com.example.member.MemberRepository
